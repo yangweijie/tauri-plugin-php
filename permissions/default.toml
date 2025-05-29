@@ -1,0 +1,66 @@
+# Default permissions for the PHP plugin
+
+[default]
+description = "Default permissions for PHP plugin"
+permissions = [
+  "php:allow-download-php-binary",
+  "php:allow-start-php-server",
+  "php:allow-stop-php-server",
+  "php:allow-get-server-status",
+  "php:allow-clone-project",
+  "php:allow-detect-framework",
+  "php:allow-get-php-version",
+  "php:allow-list-available-php-versions",
+  "php:allow-set-php-config",
+  "php:allow-get-php-config",
+  "php:allow-list-running-servers",
+  "php:allow-list-projects",
+  "php:allow-remove-project",
+  "php:allow-remove-php-binary",
+  "php:allow-get-server-logs",
+  "php:allow-find-available-port",
+  "php:allow-stop-all-servers",
+  "php:allow-get-framework-info",
+  "php:allow-validate-project-path",
+  "php:allow-get-project-info"
+]
+
+[php-binary-management]
+description = "Permissions for PHP binary management"
+permissions = [
+  "php:allow-download-php-binary",
+  "php:allow-get-php-version",
+  "php:allow-list-available-php-versions",
+  "php:allow-remove-php-binary"
+]
+
+[php-server-management]
+description = "Permissions for PHP server management"
+permissions = [
+  "php:allow-start-php-server",
+  "php:allow-stop-php-server",
+  "php:allow-get-server-status",
+  "php:allow-list-running-servers",
+  "php:allow-get-server-logs",
+  "php:allow-find-available-port",
+  "php:allow-stop-all-servers"
+]
+
+[project-management]
+description = "Permissions for project management"
+permissions = [
+  "php:allow-clone-project",
+  "php:allow-detect-framework",
+  "php:allow-list-projects",
+  "php:allow-remove-project",
+  "php:allow-get-framework-info",
+  "php:allow-validate-project-path",
+  "php:allow-get-project-info"
+]
+
+[configuration]
+description = "Permissions for configuration management"
+permissions = [
+  "php:allow-set-php-config",
+  "php:allow-get-php-config"
+]
